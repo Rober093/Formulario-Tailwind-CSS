@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body class="bg-blue-200">
+
+<main>
+
+    <div class="container ml-auto mr-auto flex flex-wrap items-start mt-8">
+        <div class="w-full pl-2 pr-2 mb-4 mt-4">
+            <h1 class="text-3xl font-extrabold text-center"> Formulario con Tailwind CSS (Responsive) </h1>
+        </div>
+    </div>
+    <div class="container ml-auto mr-auto flex items-center justify-center">
+        <div class="w-full md:w-1/2">
+
+            <!-- Formulario -->
+            <form class="bg-white px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <div class="grid grid-flow-row sm:grid-flow-col gap-3">
+                        <div class="sm:col-span-4 justify-center">
+                            <label class="block text-black text-sm font-bold mb-2" for="nya"> Nombres y Apellidos </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="nya" type="text" placeholder="Roberto Cordova" required>
+                        </div>
+                        <div class="sm:col-span-4 justify-center">
+                            <label class="block text-black text-sm font-bold mb-2" for="email"> Email </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Rober@gmail.com  " required>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-black text-sm font-bold mb-2" for="asunto"> Telefono </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline" id="asunto" type="number" placeholder="Ingresa tu numero" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-blacj text-sm font-bold mb-2" for="mensaje"> Mensaje </label>
+                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline" id="mensaje" rows="5" placeholder="El mensaje" required></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit"> Aceptar </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</main>
+
+<footer class="bg-blue-300 text-center py-4">
+    <p class="footer-second">
+        &copy; <a href="https://www.robertocanjura.com/" target="_blank">Diseño Web por Roberto Cordova</a>
+    </p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
